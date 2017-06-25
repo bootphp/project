@@ -9,7 +9,7 @@
     },
     "require": {
         "php": ">=5.5.0",
-        "bootphp/rudrax": "^dev-master"
+        "bootphp/rudrax": "dev-master"
     },
     "require-dev": {
     },
