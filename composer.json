@@ -12,6 +12,7 @@
         "bootphp/rudrax": "dev-master"
     },
     "require-dev": {
+        "boilerplatez/docs": "dev-master"
     },
     "scripts": {
         "post-create-project-cmd": [

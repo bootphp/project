@@ -1,26 +1,21 @@
 <?php
 
-if(isset($_GET["_display_errors_"])){
-    error_reporting(E_ALL & ~E_DEPRECATED);
-} else {
-    ini_set('display_errors', 0);
-    ini_set('error_reporting', 0);
-    error_reporting(0);
-}
+namespace app {
 
-require("./lib/autoload.php");
-require_once("./lib/rudrax/boot/RudraX.php");
+    use bootphp\rudrax\AppLoader;
 
-function controller_exception_handler($exception) {
-    echo "Uncaught exception: " , $exception->getMessage(), "\n";
-}
+    include_once "lib/autoload.php";
 
-try {
-    RudraX::invoke(array(
-        'RX_MODE_MAGIC' => TRUE,
-        'RX_MODE_DEBUG' => FALSE,
-        'PROJECT_ROOT_DIR' => __DIR__."/"
-    ));
-} catch(Exception $e){
-    controller_exception_handler($e);
+    class Index extends AppLoader
+    {
+        public static $DISPLAY_ERROR = TRUE;
+        public static $RX_MODE_DEBUG = TRUE;
+
+        public function __construct()
+        {
+            static::$DISPLAY_ERROR = isset($_GET["_display_errors_"]) && !empty($_GET["_display_errors_"]);
+        }
+    }
+
+    (new Index)(__DIR__);
 }
