@@ -1,7 +1,7 @@
 {
-    "name": "rudrax/project",
-    "description": "Web Skeleton Application for Rudrax",
-    "license": "proprietary",
+    "name": "bootphp/project",
+    "description": "Web Skeleton Application for bootphp",
+    "license": "MIT",
     "keywords": [
     ],
     "config" : {
@@ -9,7 +9,7 @@
     },
     "require": {
         "php": ">=5.5.0",
-        "rudrax/boot": "^0.0.17"
+        "bootphp/rudrax": "^dev-master"
     },
     "require-dev": {
     },
