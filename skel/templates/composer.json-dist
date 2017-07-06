@@ -15,11 +15,10 @@
   },
   "require": {
     "php": ">=5.5.0",
-    "rudrax/boot": "^0.0.17"
+    "rudrax/boot": ">=0.0.17"
   },
   "require-dev": {
-    "boilerplatez/docs" : "dev-master",
-    "rudrax/project": "dev-master"
+    "boilerplatez/docs" : "dev-master"
   },
   "scripts": {
   }
