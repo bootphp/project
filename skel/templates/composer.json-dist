@@ -15,7 +15,7 @@
   },
   "require": {
     "php": ">=5.5.0",
-    "bootphp/rudrax": ">=0.0.17"
+    "bootphp/rudrax": ">=0.0.0"
   },
   "require-dev": {
     "boilerplatez/docs" : "dev-master"
