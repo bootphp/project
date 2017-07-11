@@ -17,5 +17,5 @@ namespace app {
         }
     }
 
-    (new Index)(__DIR__);
+    (new Index())->execute(__DIR__);
 }
