@@ -10,6 +10,7 @@
 $ composer create-project bootphp/project my_project
 $ cd my_project
 $ composer update
+composer require bootphp/rudrax
 ```
 
 ## Build
