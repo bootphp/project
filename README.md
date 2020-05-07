@@ -20,7 +20,7 @@ $ composer update
     
 ```
 
-## Wroking?
+## Working?
 - Hit these urls in your browser and see the outputs you get
 ```
     http://local.piggy.com/welcome?name=Lucas
